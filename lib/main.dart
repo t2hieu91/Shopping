@@ -1,6 +1,6 @@
-import 'package:Shopping/views/shopping_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shopping/views/shopping_page.dart';
 
 void main() {
   runApp(MyApp());

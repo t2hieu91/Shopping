@@ -6,10 +6,10 @@ class Product {
   final double price;
 
   Product({
-    this.id,
-    this.productName,
-    this.productImage,
-    this.productDescription,
-    this.price,
+    required this.id,
+    required this.productName,
+    required this.productImage,
+    required this.productDescription,
+    required this.price,
   });
 }

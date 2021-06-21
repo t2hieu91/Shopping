@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shopping/views/shopping_detail.dart';
 import '../controllers/shopping_controller.dart';
 
 class ShoppingPage extends StatelessWidget {
@@ -8,6 +9,19 @@ class ShoppingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Demo GetX"),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Get.to(() => ShoppingDetail());
+            },
+            icon: Icon(
+              Icons.skip_next_outlined,
+            ),
+          )
+        ],
+      ),
       backgroundColor: Colors.teal,
       body: SafeArea(
         child: Column(
