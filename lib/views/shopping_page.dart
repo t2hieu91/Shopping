@@ -4,7 +4,7 @@ import 'package:shopping/views/shopping_detail.dart';
 import '../controllers/shopping_controller.dart';
 
 class ShoppingPage extends StatelessWidget {
-  final shoppingController = Get.put(ShoppingController());
+  final ShoppingController shoppingController = Get.put(ShoppingController());
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class ShoppingPage extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              Get.to(() => ShoppingDetail());
+              Get.toNamed('/detail');
             },
             icon: Icon(
               Icons.skip_next_outlined,
